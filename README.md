@@ -18,6 +18,6 @@ Here, the focus is on:
    - mm_loop_ibkr.py → builds quotes from yfinance chains (IBKR market data to be added later once the system is more stable), routes orders to IBKR Paper, consumes fills, and updates risk
 
 3. Weekly Reports & Updates:
-   - Summaries of PnL, exposures, and inventory snapshots under reports/
+   - Summaries of PnL, exposures, and inventory snapshots under /reports
 
 
