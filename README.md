@@ -59,6 +59,30 @@ python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 ```
    
+   Set up environment variables in a ".env" file to configure IBKR connection and market maker parameters in the same directory as the other modules. 
+
+```bash
+# IBKR connection
+IB_TARGET=tws-paper        # tws-paper | tws-live | gw-paper | gw-live
+IB_CLIENT_ID=101           # arbitrary int; must be unique per session
+IB_MARKET_DATA_TYPE=3      # 3=delayed (default, free), 1=live (requires subscription)
+IB_HOST=127.0.0.1          # local TWS/Gateway host
+# IB_PORT=7497             # override if you changed the default paper port
+
+# Market maker parameters
+MM_TICKER=SPY              # underlying ticker
+MM_EXPIRY=2025-10-08       # options expiry (YYYY-MM-DD)
+MM_BAND=0.95,1.05          # relative strike band for quoting
+MM_QTY=1                   # quote size (contracts)
+
+```
+
+   *Important:
+   
+   - The script has default values for most MM_* parameters (MM_TICKER, MM_BAND, MM_QTY).
+   - However, MM_EXPIRY must always be set manually in .env to a valid option expiry date (YYYY-MM-DD).
+   - Be extra careful to use an expiry that actually exists in IBKR — otherwise, the program will not function correctly.*
+
 2. **IBKR API Access**
    
    - Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
