@@ -36,7 +36,8 @@ Here, the focus is on:
 
 # Requirements
 
- 1. Python Libraries: 
+ 1. *Python Libraries:*
+    
    - numpy
    - pandas
    - yfinance
@@ -49,7 +50,17 @@ Here, the focus is on:
 pip install numpy pandas yfinance ib_insync python-dotenv
 ```
 
-2. IBKR API Access
+2. *Environment Setup*
+
+   Create a virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+```
+   
+2. *IBKR API Access*
+   
    - Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
    - Once funded, you’ll also get a linked Paper Trading account with API access.
    - For setup instructions (TWS/Gateway, enabling API, ports, etc.), please see the official IBKR API documentation.
