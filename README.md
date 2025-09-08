@@ -67,7 +67,7 @@ IB_TARGET=tws-paper        # tws-paper | tws-live | gw-paper | gw-live
 IB_CLIENT_ID=101           # arbitrary int; must be unique per session
 IB_MARKET_DATA_TYPE=3      # 3=delayed (default, free), 1=live (requires subscription)
 IB_HOST=127.0.0.1          # local TWS/Gateway host
-# IB_PORT=7497             # override if you changed the default paper port
+# IB_PORT=7497   # optional; default = 7497 (paper), 7496 (live)
 
 # Market maker parameters
 MM_TICKER=SPY              # underlying ticker
