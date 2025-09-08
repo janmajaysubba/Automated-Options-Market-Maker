@@ -20,7 +20,7 @@ Here, the focus is on:
 3. Weekly Reports & Updates:
    - Summaries of PnL, exposures, and inventory snapshots under reports/
 
-# Repo Structure
+## Repo Structure
 
 - pricer.py # (from base demo)
 - iv_solver.py # (from base demo)
@@ -32,5 +32,19 @@ Here, the focus is on:
 - ib_connector.py # TWS/Gateway session management (paper)
 - ibkr_adapter.py # Thin wrapper for IBKR orders/fills
 - mm_loop_ibkr.py # Event loop: yfinance → quotes → IBKR orders → fills → risk management
+
+## Requirements
+
+- numpy
+- pandas
+- yfinance
+- ib_insync
+- python-dotenv
+
+Install dependencies:
+
+```bash
+pip install numpy pandas yfinance ib_insync python-dotenv
+```
 
 
