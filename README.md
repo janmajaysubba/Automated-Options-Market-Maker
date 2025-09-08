@@ -36,7 +36,7 @@ Here, the focus is on:
 
 # Requirements
 
- 1. **Python Libraries:**
+ ## 1. **Python Libraries:**
     
    - numpy
    - pandas
@@ -50,7 +50,7 @@ Here, the focus is on:
 pip install numpy pandas yfinance ib_insync python-dotenv
 ```
 
-2. **Environment Setup**
+## 2. **Environment Setup**
 
    Create a virtual environment
 
@@ -77,13 +77,13 @@ MM_QTY=1                   # quote size (contracts)
 
 ```
 
-   *Important:
+   *Important:*
    
-   - The script has default values for most MM_* parameters (MM_TICKER, MM_BAND, MM_QTY).
-   - However, MM_EXPIRY must always be set manually in .env to a valid option expiry date (YYYY-MM-DD).
-   - Be extra careful to use an expiry that actually exists in IBKR — otherwise, the program will not function correctly.*
+   *- The script has default values for most MM_* parameters (MM_TICKER, MM_BAND, MM_QTY).*
+   *- However, MM_EXPIRY must always be set manually in .env to a valid option expiry date (YYYY-MM-DD).*
+   *- Be extra careful to use an expiry that actually exists in IBKR — otherwise, the program will not function correctly.*
 
-2. **IBKR API Access**
+## 3. **IBKR API Access**
    
    - Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
    - Once funded, you’ll also get a linked Paper Trading account with API access.
