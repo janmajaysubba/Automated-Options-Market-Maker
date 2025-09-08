@@ -50,8 +50,8 @@ pip install numpy pandas yfinance ib_insync python-dotenv
 ```
 
 2. IBKR API Access
-
    - Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
    - Once funded, you’ll also get a linked Paper Trading account with API access.
    - For setup instructions (TWS/Gateway, enabling API, ports, etc.), please see the official IBKR API documentation.
 
+ 
