@@ -16,6 +16,7 @@ Here, the focus is on:
 
 2. Paper‑Trading Loop:
    - mm_loop_ibkr.py → builds quotes from yfinance chains (IBKR market data to be added later once the system is more stable), routes orders to IBKR Paper, consumes fills, and updates risk
+   - *Note: Market data comes from `yfinance` for now; an IBKR data subscription is not required to run this repo.* 
 
 3. Weekly Reports & Updates:
    - Summaries of PnL, exposures, and inventory snapshots under reports/
@@ -35,6 +36,7 @@ Here, the focus is on:
 
 ## Requirements
 
+Python Libraries: 
 - numpy
 - pandas
 - yfinance
@@ -47,4 +49,9 @@ Install dependencies:
 pip install numpy pandas yfinance ib_insync python-dotenv
 ```
 
+IBKR API Access
+
+- Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
+- Once funded, you’ll also get a linked Paper Trading account with API access.
+- For setup instructions (TWS/Gateway, enabling API, ports, etc.), please see the official IBKR API documentation.
 
