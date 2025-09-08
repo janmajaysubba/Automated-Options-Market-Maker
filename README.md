@@ -18,6 +18,19 @@ Here, the focus is on:
    - mm_loop_ibkr.py → builds quotes from yfinance chains (IBKR market data to be added later once the system is more stable), routes orders to IBKR Paper, consumes fills, and updates risk
 
 3. Weekly Reports & Updates:
-   - Summaries of PnL, exposures, and inventory snapshots under /reports
+   - Summaries of PnL, exposures, and inventory snapshots under reports/
+
+# Repo Structure
+
+- pricer.py # (from base demo)
+- iv_solver.py # (from base demo)
+- live_data.py # yfinance options chain/spot (for now)
+- batch_surface.py # Batch IV calculation
+- mm_quote.py # Inventory-aware quoting
+- risk_tracker.py # RiskBook: delta/vega exposures
+- mm_vega.py # Vega hedge sizing
+- ib_connector.py # TWS/Gateway session management (paper)
+- ibkr_adapter.py # Thin wrapper for IBKR orders/fills
+- mm_loop_ibkr.py # Event loop: yfinance → quotes → IBKR orders → fills → risk management
 
 
