@@ -79,7 +79,7 @@ MM_QTY=1                   # quote size (contracts)
 
    *Important:*
    
-   *The script has default values for most MM_* parameters (MM_TICKER, MM_BAND, MM_QTY). However, MM_EXPIRY must always be set manually in .env to a valid option expiry date (YYYY-MM-DD). Be extra careful to use an expiry that actually exists in IBKR — otherwise, the program will not function correctly.*
+   *The script has default values for most MM parameters (MM_TICKER, MM_BAND, MM_QTY). However, MM_EXPIRY must always be set manually in .env to a valid option expiry date (YYYY-MM-DD). Be extra careful to use an expiry that actually exists in IBKR — otherwise, the program will not function correctly.*
 
 ## 3. **IBKR API Access**
    
