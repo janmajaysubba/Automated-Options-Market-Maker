@@ -36,7 +36,7 @@ Here, the focus is on:
 
 ## Requirements
 
-Python Libraries: 
+# Python Libraries: 
 - numpy
 - pandas
 - yfinance
@@ -49,7 +49,7 @@ Install dependencies:
 pip install numpy pandas yfinance ib_insync python-dotenv
 ```
 
-IBKR API Access
+# IBKR API Access
 
 - Requires a funded IBKR Pro account (IBKR Lite accounts do not support API access).
 - Once funded, you’ll also get a linked Paper Trading account with API access.
